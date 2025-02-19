@@ -1,0 +1,89 @@
+:root {
+    --black-color: #1B1B1B;
+    --white-color: #fefefe;
+    --primary-color: #0c153c;
+    --secondary-color: #516278;
+    --tertiary-color: #080725;
+    --yellow-color: #ffc30f;
+}
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/************************************************
+COMMUN
+*************************************************/
+
+ul {
+    list-style: none inside none;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Fraunces", sans-serif;
+}
+
+.off-screen-menu {
+    display: none;
+}
+
+
+
+/**************************************************
+Structure 
+**************************************************/
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row-header {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.row-enseignement {
+    /* display: flex
+; */
+    flex-flow: row wrap;
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+
+
+h2 {
+    color: var(--black-color);
+    font-family: "Fraunces", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+
+
+}
+
+#header_blue {
+    background-color: var(--primary-color);
+    padding: 5px;
+    border-bottom: 3px solid var(--yellow-color);
+}

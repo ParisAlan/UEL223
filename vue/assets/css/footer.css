@@ -1,0 +1,74 @@
+/*****************************************************************
+FOOTER
+*****************************************************************/
+
+.footer {
+    background: url(../images/hudsonlogoghost.png);
+    background-color: #0b1a3a;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 15%;
+}
+
+.footer-section h3 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--white-color);
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: rgb(184, 184, 184);
+    text-decoration: none;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #ffffff40;
+    padding-top: 20px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #f8b400;
+}
+
+.foot-text {
+    font-family: 'Fraunces', sans-serif;
+}
