@@ -5,4 +5,5 @@
         <div class="slogan-text">
             <span>Excellence Together.</span>
         </div>
+        
     </section>

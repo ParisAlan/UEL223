@@ -190,6 +190,67 @@ Rajout Animation ( https://graphiste.com/blog/30-animations-de-texte-pour-surpre
 }
 
 /*****************************************************************
+NEWS
+******************************************************************/
+
+.news {
+    background-color: var(--tertiary-color);
+    text-align: center;
+    padding: 3rem;
+}
+
+.news-title h2 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--white-color);
+    padding-bottom: 5px;
+}
+
+.news h3 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.news h4 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--white-color);
+    padding-bottom: 10px;
+}
+
+.news-article {
+    width: 30%;
+    display: grid;
+}
+
+.news-articles {
+    display: flex;
+    padding: 2rem;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.article-text {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 1rem;
+}
+
+.news-pic {
+    width: 100%;
+}
+
+.news-article:hover {
+    transform: scale(1.1);
+    border: 1px solid var(--secondary-color);
+}
+
+
+/*****************************************************************
 DOYEN 
 *****************************************************************/
 
@@ -240,7 +301,7 @@ ENSEIGNEMENT
     background-color: var(--primary-color);
     text-align: center;
     display: flex;
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .enseignement h2 {

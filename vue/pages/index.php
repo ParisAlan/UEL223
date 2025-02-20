@@ -11,7 +11,15 @@
 ?>
 
 <?php
+	require_once 'index/inc.news.php';
+?>
+
+<?php
 	require_once 'index/inc.enseignement.php';
+?>
+
+<?php
+	require_once 'structure/inc.interlude.php';
 ?>
 
 <?php
