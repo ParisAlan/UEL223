@@ -119,3 +119,169 @@ INTErLUDE SPOrT
 .hawks-pic:hover {
     transform: scale(1.2);
 }
+
+
+/******************************************************************************************
+PAGE CONNEXION 
+**********************************************************************************************/
+
+.connexion {
+    background-color: var(--secondary-color);
+    padding: 9rem 3rem 10rem;
+
+}
+
+.connexion-formulaire {
+    background-color: white;
+    text-align: center;
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.formulaire-gauche {
+    flex: 55% 0 0;
+}
+
+.formulaire-gauche img {
+    width: 100%;
+    border-radius: 2rem 0 0 2rem;
+    height: 100%;
+}
+
+.formulaire-droite {
+    padding: 2rem;
+    flex: 45% 0 0;
+}
+
+.formulaire-droite h1 {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.377);
+    font-family: "Fraunces", sans-serif;
+}
+
+#login,
+#password {
+    width: 90%;
+    border: 0 none;
+    padding: 1rem 1rem 0.5rem 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 17px;
+}
+
+#login:focus,
+#password:focus {
+    outline: none;
+}
+
+#btn-1 {
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    width: 40%;
+    text-transform: uppercase;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+#btn-1:hover {
+    background-color: white;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.information-supp {
+    background-color: lightgray;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 2rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.email-supp {
+    font-weight: bold;
+}
+
+/*****************************
+    CORRECT OU PAS
+******************************/
+
+#correct {
+    padding: 0.8rem;
+    background-color: #B0F2b6;
+    margin-bottom: 1rem;
+    color: green;
+}
+
+#mauvais {
+    padding: 0.8rem;
+    background-color: #FD9E9F;
+    margin-bottom: 1rem;
+    color: rgb(250, 27, 27);
+}
+
+/****************************************************
+LOADING ( UTILISATION : https://cssloaders.github.io/ )
+*******************************************************/
+
+.loading {
+    display: flex;
+    padding: 18rem;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 1s linear infinite;
+}
+
+.loader::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0px;
+    border-radius: 50%;
+    border: 5px solid var(--secondary-color);
+    animation: prixClipFix 3s linear forwards;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes prixClipFix {
+    0% {
+        clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+    }
+
+    25% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+    }
+
+    50% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+    }
+
+    75% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+    }
+
+    100% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+        visibility: hidden;
+
+    }
+}
+
+.load {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}

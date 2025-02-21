@@ -26,9 +26,9 @@
                             <p class="header-navi-lien" title="Fazcoins">|</p>
                         </li>
                         <li class="header-nav-item">
-                        <a href="#" class="header-navi-lien" title="connexion">Connexion</a>
+                        <a href="connexion.php" class="header-navi-lien" title="connexion">Connexion</a>
                             <a href="#" class="header-navi-lien" title="Mon compte"><i class="fa-solid fa-user"></i></a>
-                            <a href="#" class="header-navi-lien" titel="Boutique"><i
+                            <a href="boutique.php" class="header-navi-lien" titel="Boutique"><i
                                     class="fa-solid fa-cart-shopping"></i></a>
                         </li>
                     </ul>
