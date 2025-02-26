@@ -45,6 +45,14 @@ Structure
     margin-right: auto;
 }
 
+.row-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .row-column {
     display: flex;
     flex-flow: row wrap;
@@ -95,6 +103,16 @@ h2 {
     background-color: var(--primary-color);
     padding: 5px;
     border-bottom: 3px solid var(--yellow-color);
+}
+
+#header_white {
+    background-color: var(--white-color);
+    padding: 5px;
+    border-bottom: 3px solid var(--yellow-color);
+}
+
+.middle {
+    text-align: center;
 }
 
 /******************************************************

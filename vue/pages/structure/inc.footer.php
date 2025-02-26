@@ -41,6 +41,8 @@
     </footer>
 
 
+
 </body>
+<script type="text/javascript" src="vue/assets/js/script.js"></script>
 
 </html>

@@ -7,15 +7,7 @@
 ?>
 
 <?php
-	require_once 'shop/inc.pub.php';
-?>
-
-<?php
-	require_once 'shop/inc.highlight.php';
-?>
-
-<?php
-	require_once 'shop/inc.newsletter.php';
+	require_once 'shop/inc.produit.php';
 ?>
 
 <?php

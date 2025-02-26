@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="vue/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="vue/assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="vue/assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="vue/assets/css/boutique.css">
 
     <!-- Google Fonts -->
     <!-- COMFORTAA -->
@@ -40,6 +41,10 @@
 
     <!--FONT AWESOME-->
     <script src="https://kit.fontawesome.com/ce9141f6dc.js" crossorigin="anonymous"></script>
+
+    <!-- JQUErY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
