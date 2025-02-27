@@ -6,7 +6,7 @@ $products = $query->fetchAll(PDO::FETCH_ASSOC);
 <section class="highlight-shop">
     <div class="row-column">
         <div class="highlight-title">
-            <h2>Mise en avant : </h2>
+            <h2>Mise en avant </h2>
         </div>
         <div class="highlighter">
             <div class="highlighters">

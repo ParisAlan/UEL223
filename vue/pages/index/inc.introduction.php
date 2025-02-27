@@ -14,7 +14,7 @@
                             <a href="#" class="header-navi-lien" title="Actualités">Actualités</a>
                         </li>
                         <li class="header-nav-item">
-                            <a href="#" class="header-navi-lien" title="acad">Programmes Académiques</a>
+                            <a href="programmes_ac.php" class="header-navi-lien" title="acad">Programmes Académiques</a>
                         </li>
                         <li class="header-nav-item">
                             <a href="#" class="header-navi-lien" title="campus">Vie sur le Campus</a>

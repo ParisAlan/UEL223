@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="vue/assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="vue/assets/css/index.css">
     <link rel="stylesheet" type="text/css" href="vue/assets/css/boutique.css">
+    <link rel="stylesheet" type="text/css" href="vue/assets/css/acad.css">
 
     <!-- Google Fonts -->
     <!-- COMFORTAA -->

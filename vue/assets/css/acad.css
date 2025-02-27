@@ -1,0 +1,498 @@
+/*****************************************************************
+PROGRAMMES ACADEMIQUES
+*****************************************************************/
+
+/****************** SECTION HEADER *********************/
+
+p {
+    font-family: "Comfortaa", serif;
+    font-size: 18px;
+}
+
+p {
+    color: #fefefe;
+}
+
+
+#h1 {
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Fraunces';
+    position: relative;
+}
+
+#presentation_aca {
+    background-image: url(../acad/diplome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#accroche_aca {
+    font-size: 20px;
+    text-align: center;
+    margin: 0px 2rem 0px 2rem;
+    padding: 9px 6rem 9px 6rem;
+    font-family: "Comfortaa", serif;
+}
+
+/****************** SECTION PROGRAMMES *********************/
+
+
+.h2 {
+    color: white;
+    font-size: 3rem;
+    margin: 0 0 0.5em 0;
+    text-align: center;
+    padding: 0;
+    font-family: "Noto Serif", serif;
+}
+
+h3 {
+    color: white;
+    font-size: 2rem;
+    padding: 2em;
+    margin-top: 0.3em;
+    text-align: center;
+    padding: 0;
+    font-family: "Noto Serif", serif;
+}
+
+
+
+#section_prog {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 30px; */
+    justify-content: center;
+    /* margin: 0 2rem 0 2rem; */
+    /* perspective: 1000px; */
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 3em;
+
+}
+
+.prog {
+    width: 30%;
+    border: 2px solid #ffc30f;
+    border-radius: 48px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    opacity: 0;
+    transform: scale(0.8) translateY(30px);
+    animation: fadeInZoom 0.6s ease-out forwards;
+    background-color: var(--tertiary-color);
+    margin-bottom: 2em;
+}
+
+.prog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.prog-title {
+    text-align: center;
+}
+
+@keyframes fadeInZoom {
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+
+
+.prog:hover {
+    transform: rotateY(10deg) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.prog>p {
+    font-size: 15px;
+    margin: 0px 20px 0 20px;
+    text-align: center;
+    max-height: 0rem;
+    overflow: hidden;
+    font-family: "Comfortaa", serif;
+    transition: max-height 0.5s ease-in-out;
+
+
+}
+
+.phrases_gras {
+    font-weight: 300;
+}
+
+.prog:hover>p {
+    max-height: 200px;
+}
+
+.img_prog {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.prog:hover .img_prog {
+    transform: scale(1.1);
+}
+
+.ensavoirplus {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    border: 1px solid white;
+    font-family: "Fraunces", sans-serif;
+    border-radius: 20px;
+    padding: 8px 14px 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.ensavoirplus:hover {
+    background-color: #ffc30f;
+    color: #0c153c;
+    border: 1px solid #0c153c;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 195, 15, 0.8);
+}
+
+.conteneur_btn {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+}
+
+/****************** SECTION CANDIDATURE *********************/
+
+#candidatures {
+    background-color: var(--tertiary-color);
+    padding: 2em;
+}
+
+.color_h2 {
+    background-color: #0c153c;
+}
+
+p {
+    font-family: "Comfortaa", serif;
+    font-size: 15px;
+}
+
+#accroche_sign {
+    font-family: "Comfortaa", serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.h4 {
+    color: #ffc30f;
+    font-size: 2rem;
+    margin: 2rem 0;
+    font-family: "Noto Serif", serif;
+    text-align: center;
+
+}
+
+.underline {
+    border-bottom: 4px solid #ffc30f;
+}
+
+.admin_presentation {
+    margin: 0 20px 0 20px;
+
+}
+
+.links {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffc30f;
+    font-family: "Comfortaa", serif;
+    position: relative;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.links::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #ffc30f;
+    transition: width 0.3s ease-in-out;
+}
+
+.links:hover {
+    transform: scale(1.05);
+    color: #ffda44;
+}
+
+.links:hover::after {
+    width: 100%;
+}
+
+.custom-list {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.custom-list li::before {
+    content: "★";
+    position: absolute;
+    color: gold;
+    font-size: 14px;
+    margin-left: -1rem;
+}
+
+.text_spacing {
+    margin: 1rem 0 3rem 0;
+    line-height: 1.5rem;
+
+}
+
+#souligner {
+    text-decoration: underline;
+}
+
+#avertissement_med {
+    color: #ffc30f;
+}
+
+#avertissement_med::before {
+    content: "⚠️";
+    vertical-align: text-bottom;
+    margin-right: 4px;
+}
+
+#admission_licence {
+    display: flex;
+    align-items: center;
+}
+
+.text_cursus {
+    flex-basis: 80%;
+    padding-right: 3rem;
+    margin-right: 1rem;
+    text-align: justify;
+}
+
+.cursus_contact {
+    background-color: #0c153c;
+    padding-bottom: 2rem;
+    position: relative;
+    box-shadow: 10px 10px 0px #ffc30f;
+    border-radius: 4rem;
+    margin-top: 3rem;
+}
+
+.cursus_contact>ul {
+    font-family: "Comfortaa", serif;
+    font-size: 15px;
+    list-style-type: disc;
+    color: white;
+    margin-left: 30px;
+
+}
+
+#num_licence {
+    text-align: center;
+}
+
+#admissions_master {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.master {
+    margin-top: 5rem;
+}
+
+/****************** SECTION FORMATION CONTINUE ET ALTERNANCE *********************/
+
+#formation_alt_cont {
+    background-color: var(--primary-color);
+    padding: 3em;
+}
+
+
+#formation_continue::before {
+    content: "🎓 ";
+    font-size: 1.3em;
+    margin-right: -13px;
+}
+
+#formation_continue {
+    padding: 0.6em;
+}
+
+.formation_cont>ul {
+    font-family: "Comfortaa", serif;
+    font-size: 15px;
+    color: white;
+}
+
+
+.formation_cont>ul li i {
+    color: #ffc30f;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.button_inscription {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    background-color: #0c153c;
+    border: 1px solid white;
+    font-family: "Fraunces", sans-serif;
+    border-radius: 20px;
+    padding: 8px 14px 8px;
+    box-shadow: 0 0 10px rgba(255, 195, 15, 0.8);
+    transition: all 0.3s ease;
+}
+
+.button_inscription:hover {
+    text-decoration: none;
+    font-size: 18px;
+    color: #0c153c;
+    background-color: white;
+    border: 1px solid #0c153c;
+    font-family: "Fraunces", sans-serif;
+    border-radius: 20px;
+    padding: 8px 14px 8px;
+    box-shadow: 0 0 10px rgba(255, 195, 15, 0.8);
+    transform: scale(1.1);
+}
+
+.button_from_cont {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+
+#container_text_alt>ul {
+    font-family: "Comfortaa", serif;
+    font-size: 15px;
+    color: white;
+}
+
+
+#container_text_alt>ul li i {
+    color: #ffc30f;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+
+.formation_alt {
+    display: flex;
+    align-items: center;
+}
+
+.formation_container {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.formation_cont,
+.formation_alt {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/****************** SECTION ERASMUS *********************/
+
+#erasmus {
+    background-color: var(--tertiary-color);
+    padding: 4em;
+}
+
+#anim_erasmus {
+    font-size: 20px;
+    font-family: "Comfortaa", serif;
+    color: #ffc30f;
+    display: inline-block;
+    position: relative;
+    animation: battement 3s ease-in-out infinite;
+}
+
+#accroche_erasmus {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Effet de battement subtil */
+@keyframes battement {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Soulignement animé */
+#anim_erasmus::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: #ffc30f;
+    transition: width 1.5s ease-in-out;
+    animation: soulignement 3s infinite;
+}
+
+@keyframes soulignement {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+#erasmus>p {
+    margin-left: 15px;
+    line-height: 1.5rem;
+}
+
+#pays {
+    color: #ffc30f;
+}
