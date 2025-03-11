@@ -39,4 +39,42 @@ $(document).ready(function () {
         }
     });
 
+
+    //////////////////////////////////////// ADMIN /////////////////////////////////////////////////////////////////
+
+    $(document).ready(function () {
+        const modal = $("#editModal");
+        const closeBtn = $(".close");
+        const editForm = $("#editForm");
+
+        // Quand on clique sur ✏️, on ouvre la modale et on pré-remplit les champs
+        $(".edit-user").on("click", function () {
+            const userId = $(this).data("id");
+            const userIdentifiant = $(this).data("identifiant");
+
+            $("#edit_id").val(userId);
+            $("#edit_identifiant").val(userIdentifiant);
+
+            modal.show();
+        });
+
+        // Quand on clique sur la croix, on ferme la modale
+        closeBtn.on("click", function () {
+            modal.hide();
+        });
+
+        // Quand on clique en dehors de la modale, on la ferme
+        $(window).on("click", function (event) {
+            if ($(event.target).is(modal)) {
+                modal.hide();
+            }
+        });
+    });
+
+
+    //////////////////////////////////////// ADMIN SHOP  /////////////////////////////////////////////////////////////////
+
+
+
+
 });

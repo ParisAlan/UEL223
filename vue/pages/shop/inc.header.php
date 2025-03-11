@@ -5,12 +5,12 @@
                 <nav id="header-nav-shop" class="column">
                     <ul class="row-menu">
 
-                    <div class="search-box">
-                        <button class="btn-search"><i class="fas fa-search"></i></button>
-                        <input type="text" class="input-search" placeholder="Votre recherche...">
-                    </div>
+                        <div class="search-box">
+                            <button class="btn-search"><i class="fas fa-search"></i></button>
+                            <input type="text" class="input-search" placeholder="Votre recherche...">
+                        </div>
 
-                    <?php
+                        <?php
                         // Vérification de la connexion : Si la personne n'est pas connectée, afficher "Se connecter" qui renvoie vers connexion.php.
                         // Sinon, afficher une icône maison qui redirige vers le profil.
 
@@ -21,7 +21,7 @@
 
                             // Vérification du statut administrateur : Si l'utilisateur est connecté et qu'il a un compte admin, afficher l'icône admin.
                             if (!empty($_SESSION['compte_admin']) && $_SESSION['compte_admin'] === "Y") {
-                                echo "<li class='header-nav-item'><a href='admin.php' class='header-navi-lien' title='Admin'><i class='fa-solid fa-user-plus'></i></a></li>";
+                                echo "<li class='header-nav-item'><a href='adminshop.php' class='header-navi-lien' title='Admin'><i class='fa-solid fa-cart-flatbed'></i></a></li>";
                             }
 
                             // Ajout de l'option de déconnexion uniquement si l'utilisateur est connecté.
@@ -30,7 +30,7 @@
 
                         // Le lien vers la boutique est toujours affiché.
                         echo "<li class='header-nav-item'><a href='panier.php' class='header-navi-lien' title='Panier'><i class='fa-solid fa-basket-shopping'></i></a></li>";
-                    ?>
+                        ?>
                     </ul>
                 </nav>
             </div>

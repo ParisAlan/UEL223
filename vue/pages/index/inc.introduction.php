@@ -4,14 +4,14 @@
             Votre navigateur ne supporte pas les vidéos HTML5.
         </video>
 
-        <header id="header">
+        <header id="header_transparent">
             <div class="row-header">
                 <a href="index.php"><img src="vue/assets/images/hudsonlogo.png" alt="Hudson Bay Logo" class="header-logo"></a>
 
                 <nav id="header-nav" class="column">
                     <ul class="row-menu">
                         <li class="header-nav-item">
-                            <a href="#" class="header-navi-lien" title="Actualités">Actualités</a>
+                            <a href="actualites.php" class="header-navi-lien" title="Actualités">Actualités</a>
                         </li>
                         <li class="header-nav-item">
                             <a href="programmes_ac.php" class="header-navi-lien" title="acad">Programmes Académiques</a>
@@ -20,10 +20,10 @@
                             <a href="#" class="header-navi-lien" title="campus">Vie sur le Campus</a>
                         </li>
                         <li class="header-nav-item">
-                            <a href="#" class="header-navi-lien" title="university">L'université</a>
+                            <a href="universite.php" class="header-navi-lien" title="university">L'université</a>
                         </li>
                         <li class="header-nav-item">
-                            <p class="header-navi-lien" title="Fazcoins">|</p>
+                            <p class="header-navi-lien" title="title">|</p>
                         </li>
                         <?php
                         // Vérification de la connexion : Si la personne n'est pas connectée, afficher "Se connecter" qui renvoie vers connexion.php.
@@ -51,4 +51,4 @@
                 </nav>
             </div>
         </header>
-    </section>  
+    </section>

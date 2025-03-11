@@ -1,0 +1,330 @@
+.section-informations-université {
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    background-size: cover;
+    position: relative;
+    flex-direction: column;
+    background: url(https://dx35vtwkllhj9.cloudfront.net/amazonstudios/godolkin-university/video/bg_video.jpg);
+    background-position: center;
+}
+
+#story_univ {
+    background-color: var(--tertiary-color);
+    padding: 2rem 0rem 5rem 0rem;
+}
+
+#story_univ p {
+    font-size: larger;
+}
+
+#story_univ h3 {
+    padding: 1rem;
+}
+
+#organigramme {
+    background-color: var(--primary-color);
+    padding: 3rem;
+}
+
+/************************************************ 
+HISTOIRE HUDSON BAY
+***********************************************/
+
+h2 {
+    color: #ffc30f;
+    font-size: 3rem;
+    margin: 27px 30px 35px 30px;
+    text-align: center;
+    padding: 0;
+    font-family: "Noto Serif", serif;
+}
+
+#text_story>p {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: justify;
+}
+
+#text_story {
+    background-color: #0c153c;
+    margin: 0 3rem;
+    padding: 2rem 3rem;
+    border-radius: 3rem;
+}
+
+#story_univ>p {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: justify;
+}
+
+.fa-star {
+    color: #ffc30f;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+/************************************************ 
+RUBIRQUE STATS
+***********************************************/
+
+#rubrique_stat {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #ffc30f;
+    padding: 1rem 2rem;
+}
+
+.stat>p {
+    font-family: "Comfortaa", serif;
+
+}
+
+.stat {
+    padding: 20px;
+}
+
+.stat i {
+    font-size: 2rem;
+    color: #080725;
+}
+
+.chiffre {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #080725;
+    text-align: center;
+}
+
+.stat p {
+    color: #080725;
+}
+
+/****************************************************
+EQUIPE ENSEIGNANTE FAC
+******************************************************/
+
+
+#organigramme {
+    text-align: center;
+}
+
+.equipe_aca {
+    padding: 0 10px;
+    margin: 0 auto;
+    font-family: "Fraunces", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 11px;
+    justify-items: center;
+}
+
+.equipe_fac {
+    border: 4px solid var(--yellow-color);
+}
+
+.rectangle {
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    padding: 2rem 2rem;
+}
+
+/* LEVEL-1 STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.level-1 {
+    width: 73%;
+    margin: 0 10px 28px;
+    color: white;
+}
+
+.level-1,
+h1 {
+    font-size: 19px;
+    color: var(--white-color);
+    line-height: normal;
+    margin: 0;
+}
+
+.level-1,
+p {
+    font-size: 16px;
+}
+
+
+.equipe_fac {
+    height: 8rem;
+    border-radius: 5rem;
+}
+
+/************************************************ 
+EQUIPE FOOTBALL
+***********************************************/
+#skyhawks {
+    padding: 3rem;
+    background-color: #0c153c;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/hawksbann.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-color: var(--secondary-color);
+
+}
+
+#skyhawks h2 {
+    color: white;
+}
+
+#skyhawks p {
+    font-size: 18px;
+}
+
+#footbal {
+    display: flex;
+    ALIGN-ITEMS: center;
+    justify-content: center;
+}
+
+#text_equipe {
+    display: flex;
+    gap: 5%;
+}
+
+#img_equipe {
+    width: 100%;
+}
+
+#equipe_image {
+    max-width: 30rem;
+    margin-left: 3rem;
+}
+
+#presentation_equipe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    max-width: 40rem;
+    font-family: "Comfortaa", serif;
+    flex-direction: column;
+}
+
+.btn_sky {
+    color: white;
+    border: 1px solid white;
+    background-color: #0c153c;
+    border-radius: 3rem;
+    padding: 10px;
+    margin-right: 1rem;
+
+}
+
+.btn_sky:hover {
+    background-color: #ffc30f;
+    color: #0c153c;
+    border: 1px solid #0c153c;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 195, 15, 0.8);
+}
+
+
+#btn_sky {
+    display: flex;
+    margin-top: 2rem;
+}
+
+
+/************************************************ 
+CARROUSEL POSTES A POURVOIR
+***********************************************/
+
+#recrutement {
+    list-style: circle;
+
+}
+
+#section_emplois {
+    background-color: var(--tertiary-color);
+    padding: 3rem;
+}
+
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+}
+
+.carousel-item {
+    margin-left: 1rem;
+}
+
+.carousel-item {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 450px;
+    margin-left: 1rem;
+}
+
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    margin-left: 1rem;
+    scroll-snap-align: start;
+    list-style: none;
+}
+
+.img_poste {
+    width: 100%;
+}
+
+.card>h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3d4852;
+    border-radius: 3px;
+}
+
+.card {
+    border: 1px solid #ffc30f;
+    padding: 1rem;
+    border-radius: 5rem;
+    background-color: var(--primary-color);
+}
+
+.card li {
+    color: var(--white-color);
+    font-family: 'Comfortaa', sans-serif;
+    list-style: none;
+}
+
+.profil_ul {
+    list-style: circle;
+    margin-top: 2rem;
+}
+
+.underline {
+    border-bottom: 4px solid #ffc30f;
+}

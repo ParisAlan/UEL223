@@ -2,7 +2,7 @@
 Header 
 ***********************************************/
 
-#header {
+#header_transparent {
     backdrop-filter: blur(8px);
     background-color: rgb(35 35 35 / 20%);
     padding: 5px;
@@ -197,7 +197,8 @@ NEWS
     font-weight: 700;
     font-size: 40px;
     color: var(--white-color);
-    padding-bottom: 5px;
+    padding: 0px 0px 5px 0px !important;
+    margin: 0px !important;
 }
 
 .news h3 {

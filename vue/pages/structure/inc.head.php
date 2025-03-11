@@ -8,10 +8,13 @@
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="vue/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="vue/assets/css/actualites.css">
     <link rel="stylesheet" type="text/css" href="vue/assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="vue/assets/css/index.css">
     <link rel="stylesheet" type="text/css" href="vue/assets/css/boutique.css">
     <link rel="stylesheet" type="text/css" href="vue/assets/css/acad.css">
+    <link rel="stylesheet" type="text/css" href="vue/assets/css/universite.css">
+
 
     <!-- Google Fonts -->
     <!-- COMFORTAA -->
