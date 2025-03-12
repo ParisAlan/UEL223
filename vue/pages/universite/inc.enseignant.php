@@ -1,5 +1,11 @@
 <!--L'EQUIPE ENSEIGNANTE -->
 
+<?php
+$query = $bdd->query("SELECT * FROM `administration`");
+$administrations = $query->fetchAll(PDO::FETCH_ASSOC);
+?>
+
+
 <section id="organigramme">
     <div class="section-middle">
         <h2>Notre équipe</h2>

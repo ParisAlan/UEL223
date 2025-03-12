@@ -19,6 +19,10 @@
 COMMUN
 *************************************************/
 
+body {
+    background-color: var(--primary-color);
+}
+
 ul {
     list-style: none inside none;
 }
@@ -188,6 +192,7 @@ PAGE CONNEXION
     padding-bottom: 1rem;
     border-bottom: 0.5px solid rgba(128, 128, 128, 0.377);
     font-family: "Fraunces", sans-serif;
+    color: black;
 }
 
 #login,
