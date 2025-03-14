@@ -81,9 +81,9 @@ INSERT INTO `articles` (`id`, `titre`, `description`, `image`, `auteur`, `catego
 
 (3, 'Tournoi interuniversitaire de basketball', 'L’équipe des Hudson Bay Falcons affrontera les meilleures équipes universitaires de la région lors du tournoi annuel. Venez nombreux pour encourager nos joueurs !', 'vue/assets/actualites/basketball.jpg', 'Service des sports', 'Sport', '', '', '', '1', '2025-03-25'),
 
-(4, 'Lancement du programme de mentorat étudiant', 'L’université met en place un programme de mentorat pour aider les étudiants à s’orienter et à réussir leurs études. Les inscriptions sont ouvertes dès maintenant !', 'vue/assets/actualites/mentorat.jpg', 'Service d’Orientation', 'Éducation', '', '', '', '1', '2025-05-01'),
+(4, 'Lancement du programme de mentorat étudiant', 'L’université met en place un programme de mentorat pour aider les étudiants à s’orienter et réussir leurs études. Les inscriptions sont ouvertes dès maintenant !', 'vue/assets/actualites/mentorat.jpg', 'Service d’Orientation', 'Éducation', '', '', '', '1', '2025-05-01'),
 
-(5, 'Journée de l’environnement : L’Université Hudson Bay s’engage !', 'Dans le cadre de la Journée de la Terre, l’université organise une grande opération de nettoyage et de sensibilisation à l’écologie. Ateliers, conférences et activités collaboratives seront au programme. Rejoignez-nous pour faire la différence !', 'vue/assets/actualites/environnement.jpg', 'Club Écologie', 'Écologie', '', '', '', '1', '2025-04-22'),
+(5, 'L’Université Hudson Bay s’engage !', 'Dans le cadre de la Journée de la Terre, l’université organise une grande opération de nettoyage et de sensibilisation à l’écologie. Ateliers, conférences et activités collaboratives seront au programme. Rejoignez-nous pour faire la différence !', 'vue/assets/actualites/environnement.jpg', 'Club Écologie', 'Écologie', '', '', '', '1', '2025-04-22'),
 
 (6, 'Festival culturel : découvrez les talents du campus', 'Musique, danse, théâtre et expositions… Le Festival culturel de l’Université Hudson Bay met en lumière les talents de nos étudiants. Un moment festif et créatif à ne pas manquer !', 'vue/assets/actualites/culture.jpg', 'Faculté des Arts', 'Culture', '', '', '', '0', '2025-06-05');
 

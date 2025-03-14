@@ -16,6 +16,10 @@
     <link rel="stylesheet" type="text/css" href="vue/assets/css/acad.css">
     <link rel="stylesheet" type="text/css" href="vue/assets/css/universite.css">
 
+    <!-- OWL CARROUSEL-->
+    <link rel="stylesheet" href="vue/assets/librairies/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vue/assets/librairies/owlcarousel/assets/owl.theme.default.min.css">
+
 
     <!-- Google Fonts -->
     <!-- COMFORTAA -->
@@ -44,12 +48,16 @@
         href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Mrs+Saint+Delafield&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap"
         rel="stylesheet">
 
+    <!-- ANTON -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
     <!--FONT AWESOME-->
     <script src="https://kit.fontawesome.com/ce9141f6dc.js" crossorigin="anonymous"></script>
 
     <!-- JQUErY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 </head>
 
 <body>

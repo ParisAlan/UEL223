@@ -19,10 +19,6 @@
 COMMUN
 *************************************************/
 
-body {
-    background-color: var(--primary-color);
-}
-
 ul {
     list-style: none inside none;
 }

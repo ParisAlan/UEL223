@@ -74,7 +74,15 @@ $(document).ready(function () {
 
     //////////////////////////////////////// ADMIN SHOP  /////////////////////////////////////////////////////////////////
 
-
+    $(".owl-carousel").owlCarousel({
+        loop: true, // Permet de faire une boucle infinie
+        margin: 10, // Espacement entre les éléments
+        responsive: {
+            0: { items: 1 }, // Sur petits écrans, 1 image
+            600: { items: 2 }, // À partir de 600px, 2 images
+            1000: { items: 2 } // À partir de 1000px, 3 images
+        }
+    });
 
 
 });

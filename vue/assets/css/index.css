@@ -208,39 +208,79 @@ NEWS
     color: var(--secondary-color);
 }
 
-.news h4 {
-    font-family: 'Fraunces', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    color: var(--white-color);
-    padding-bottom: 10px;
-}
-
-.news-article {
-    width: 30%;
-    display: grid;
-}
-
-.news-articles {
-    display: flex;
-    padding: 2rem;
-    align-content: center;
-    justify-content: space-between;
-}
-
 .article-text {
     background-color: var(--primary-color);
     color: var(--white-color);
     padding: 1rem;
+
 }
 
 .news-pic {
     width: 100%;
 }
 
-.news-article:hover {
+.container .carddeck .slide {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+
+}
+
+.container .carddeck .slide.slide1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: .7s;
+    transform: translateY(100px);
+
+}
+
+.container .carddeck:hover .slide.slide1 {
+    transform: translateY(0px);
     transform: scale(1.1);
-    border: 1px solid var(--secondary-color);
+
+}
+
+.container .carddeck .slide.slide2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: .8s;
+    transform: translateY(-70px);
+    background-color: var(--primary-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+
+}
+
+.container .carddeck:hover .slide.slide2 {
+    transform: translateY(0);
+    transform: scale(1.1);
+
+}
+
+.container .carddeck .slide.slide2::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    bottom: 15px;
+    left: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--yellow-color);
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 2rem 4rem 2rem;
+    flex-wrap: wrap;
+
 }
 
 
@@ -295,7 +335,7 @@ ENSEIGNEMENT
     background-color: var(--primary-color);
     text-align: center;
     display: flex;
-    padding: 3rem;
+    padding: 1rem 2rem 4rem 2rem;
 }
 
 .enseignement h2 {
@@ -338,4 +378,30 @@ ENSEIGNEMENT
     align-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+}
+
+.light {
+    background-color: var(--secondary-color);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--secondary-color) 5%, var(--secondary-color) 5%, var(--primary-color) 42%, var(--primary-color) 49%, var(--primary-color) 53%, var(--secondary-color) 59%, var(--secondary-color) 100%);
+
+
+    background-repeat: no-repeat;
+    background-position: 0px;
+    background-size: 380%;
+}
+
+.light:hover {
+    transform: scale(1.1);
+    animation: light 1.3s;
+}
+
+@keyframes light {
+    0% {
+        background-position: -600px;
+    }
+
+    100% {
+        background-position: 0px;
+    }
 }
