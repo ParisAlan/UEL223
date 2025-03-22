@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="vue/assets/css/boutique.css">
     <link rel="stylesheet" type="text/css" href="vue/assets/css/acad.css">
     <link rel="stylesheet" type="text/css" href="vue/assets/css/universite.css">
+    <link rel="stylesheet" type="text/css" href="vue/assets/css/cursus.css">
+
 
     <!-- OWL CARROUSEL-->
     <link rel="stylesheet" href="vue/assets/librairies/owlcarousel/assets/owl.carousel.min.css">

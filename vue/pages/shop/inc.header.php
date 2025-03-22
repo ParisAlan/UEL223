@@ -5,10 +5,14 @@
                 <nav id="header-nav-shop" class="column">
                     <ul class="row-menu">
 
+                        <!-- ON PREPARE LE FORMULAIRE QUI VA RECEVOIR LES DIFF' INFORMATIONS -->
                         <div class="search-box">
-                            <button class="btn-search"><i class="fas fa-search"></i></button>
-                            <input type="text" class="input-search" placeholder="Votre recherche...">
+                            <form action="products.php" method="GET">
+                                <input type="text" name="query" class="input-search" placeholder="Votre recherche...">
+                                <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
+                            </form>
                         </div>
+
 
                         <?php
                         // Vérification de la connexion : Si la personne n'est pas connectée, afficher "Se connecter" qui renvoie vers connexion.php.

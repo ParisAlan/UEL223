@@ -5,6 +5,11 @@
     --secondary-color: #516278;
     --tertiary-color: #080725;
     --yellow-color: #ffc30f;
+    --grey-color: #8998A3;
+    --orange-color: #e6561a;
+    --lightgray-color: #E1E9EF;
+    --bluegrey-color: #0F4D6B;
+    --lightlightgray: #F4F6F8;
 }
 
 *,
@@ -515,10 +520,11 @@ select#choix {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-around;
+    padding: 3rem;
 }
 
 /* Style de la card */
-.card {
+.cardz {
     border: 4px solid var(--secondary-color);
     background-color: white;
     border-radius: 2rem;

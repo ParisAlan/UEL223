@@ -86,3 +86,27 @@ $(document).ready(function () {
 
 
 });
+
+
+
+
+
+
+
+//////////////////////////////////////// PRODUCTS  /////////////////////////////////////////////////////////////////
+
+document.addEventListener("DOMContentLoaded", function () {
+    const searchBox = document.querySelector(".search-box");
+    const searchInput = document.querySelector(".input-search");
+    const searchButton = document.querySelector(".btn-search");
+
+    searchButton.addEventListener("click", function (event) {
+        // Si le champ de recherche est vide et caché, on l'affiche sans soumettre
+        if (searchInput.value.trim() === "") {
+            event.preventDefault(); // Empêche l'envoi du formulaire
+            searchBox.classList.add("active"); // Ajoute une classe pour l'afficher
+            searchInput.focus(); // Met le focus sur l'input
+        }
+    });
+});
+

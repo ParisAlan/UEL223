@@ -21,6 +21,7 @@ SET time_zone = "+00:00";
 -- Base de données : `hudsonbayuni`
 --
 
+
 -- --------------------------------------------------------
 
 --
@@ -47,8 +48,14 @@ CREATE TABLE `produits` (
 INSERT INTO `produits` (`id`, `nom`, `prix`, `mise_en_avant`, `collection`, `couleur`, `image`, `genre`, `categorie`, `description`) VALUES
 (1, 'T-Shirt Hudson Bay University', 30.00, 1, 'Hudson', 'noir', 'tshirt_hudson_bay_gris.png', 'homme', 'T-shirt', 'Un t-shirt confortable et stylé aux couleurs de l’université Hudson Bay. Conçu en coton bio.'),
 (2, 'T-Shirt Hudson Bay University', 45.00, 1, 'Hudson', 'noir', 'tshirt_hudson_bay_noir.png', 'homme', 'T-shirt', 'Un t-shirt premium fabriqué avec des matériaux éco-responsables, idéal pour un look casual.'),
-(3, 'T-Shirt Hudson Bay University', 40.00, 1, 'Hudson', 'gris', 'tshirt_hudson_bay_gris_2.png', 'homme', 'T-shirt', 'Découvrez le T-shirt Hudson Bay University en gris, édition 2025. Fabriqué en coton bio et conçu pour offrir un confort optimal tout au long de la journée. Un choix idéal pour un look décontracté et moderne.');
-
+(3, 'T-Shirt Hudson Bay University', 40.00, 1, 'Hudson', 'gris', 'tshirt_hudson_bay_gris_2.png', 'homme', 'T-shirt', 'Découvrez le T-shirt Hudson Bay University en gris, édition 2025. Fabriqué en coton bio et conçu pour offrir un confort optimal tout au long de la journée. Un choix idéal pour un look décontracté et moderne.'),
+(4, 'Bonnet Hudson Bay Jaune', 25.00, 0, 'Hudson', 'jaune', 'bonnet_hudson_jaune.png', 'homme', 'Bonnet', 'Un bonnet confortable de la collection Hudson Bay. Disponible en jaune, parfait pour un look casual et moderne.'),
+(5, 'Bonnet Skyhawks Nation Orange', 20.00, 0, 'Skyhawks', 'orange', 'bonnet_skyhawks_orange.png', 'homme', 'Bonnet', 'Le bonnet Skyhawks Nation en orange, un choix idéal pour garder votre tête au chaud tout en affichant vos couleurs.'),
+(6, 'Bonnet Skyhawks Nation Noir', 20.00, 0, 'Skyhawks', 'noir', 'bonnet_skyhawks_noir.png', 'homme', 'Bonnet', 'Bonnet Skyhawks Nation en noir, pour un style discret mais audacieux. Confort et chaleur garantis.'),
+(7, 'T-Shirt Hudson Skyhawks Orange', 35.00, 0, 'Hudson Skyhawks', 'orange', 'tshirt_skyhawks_orange.png', 'homme', 'T-shirt', 'Un t-shirt dynamique avec le logo des Hudson Skyhawks. Parfait pour un look décontracté et sport.'),
+(8, 'Sweat Hudson Bleu', 50.00, 0, 'Hudson', 'bleu', 'hudson_hoodie_bleu.png', 'homme', 'Sweat', 'Un sweat bleu Hudson Bay en coton bio, idéal pour les journées fraîches tout en restant stylé.'),
+(9, 'Sweat Hudson Noir', 50.00, 0, 'Hudson', 'noir', 'hudson_hoodie_noir.png', 'homme', 'Sweat', 'Le sweat Hudson en noir, un incontournable de la collection Hudson Bay, confortable et élégant.'),
+(10, 'T-Shirt Skyhawks Nation Gris', 30.00, 0, 'Skyhawks', 'gris', 'tshirt_skyhawks_nation_gris.png', 'homme', 'T-shirt', 'T-shirt de la collection Skyhawks Nation, en gris. Conçu pour les fans du style décontracté et sportif.');
 -- --------------------------------------------------------
 
 --
@@ -86,28 +93,6 @@ INSERT INTO `articles` (`id`, `titre`, `description`, `image`, `auteur`, `catego
 (5, 'L’Université Hudson Bay s’engage !', 'Dans le cadre de la Journée de la Terre, l’université organise une grande opération de nettoyage et de sensibilisation à l’écologie. Ateliers, conférences et activités collaboratives seront au programme. Rejoignez-nous pour faire la différence !', 'vue/assets/actualites/environnement.jpg', 'Club Écologie', 'Écologie', '', '', '', '1', '2025-04-22'),
 
 (6, 'Festival culturel : découvrez les talents du campus', 'Musique, danse, théâtre et expositions… Le Festival culturel de l’Université Hudson Bay met en lumière les talents de nos étudiants. Un moment festif et créatif à ne pas manquer !', 'vue/assets/actualites/culture.jpg', 'Faculté des Arts', 'Culture', '', '', '', '0', '2025-06-05');
-
-
--- --------------------------------------------------------
-
--- --
--- -- Structure de la table `cursus`
--- --
-
--- CREATE TABLE `cursus` (
---   `id` int(11) NOT NULL,
---   `nom` varchar(255) NOT NULL,
---   `description` text NOT NULL,
---   `txt_1` text NOT NULL,
---   `txt_2` text NOT NULL,
---   `txt_3` text NOT NULL,
--- ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
--- --
--- -- Déchargement des données de la table `produits`
--- --
-
--- INSERT INTO `produits` (``) VALUES
 
 
 -- --------------------------------------------------------
@@ -183,14 +168,52 @@ INSERT INTO `produits_tailles` (`produit_id`, `taille_id`, `quantite`) VALUES
 (1, 2, 9),
 (1, 3, 10),
 (1, 4, 20),
+
 (2, 2, 40),
 (2, 3, 35),
 (2, 5, 25),
+
 (3, 1, 0),
 (3, 2, 0),
 (3, 3, 0),
 (3, 4, 0),
-(3, 5, 0);
+(3, 5, 0),
+
+(4, 1, 5),  -- Bonnet Hudson Bay Jaune (S)
+(4, 2, 15), -- Bonnet Hudson Bay Jaune (M)
+(4, 3, 10), -- Bonnet Hudson Bay Jaune (L)
+(4, 4, 20), -- Bonnet Hudson Bay Jaune (XL)
+(4, 5, 30), -- Bonnet Hudson Bay Jaune (XXL)
+
+(5, 1, 0),  -- Bonnet Skyhawks Nation Orange (S)
+(5, 2, 20), -- Bonnet Skyhawks Nation Orange (M)
+(5, 3, 35), -- Bonnet Skyhawks Nation Orange (L)
+(5, 4, 25), -- Bonnet Skyhawks Nation Orange (XL)
+(5, 5, 10), -- Bonnet Skyhawks Nation Orange (XXL)
+
+(6, 1, 0),  -- Bonnet Skyhawks Nation Noir (S)
+(6, 2, 25), -- Bonnet Skyhawks Nation Noir (M)
+(6, 3, 40), -- Bonnet Skyhawks Nation Noir (L)
+(6, 4, 18), -- Bonnet Skyhawks Nation Noir (XL)
+(6, 5, 12), -- Bonnet Skyhawks Nation Noir (XXL)
+
+(7, 1, 0),  -- T-Shirt Hudson Skyhawks Orange (S)
+(7, 2, 50), -- T-Shirt Hudson Skyhawks Orange (M)
+(7, 3, 40), -- T-Shirt Hudson Skyhawks Orange (L)
+(7, 4, 30), -- T-Shirt Hudson Skyhawks Orange (XL)
+(7, 5, 20), -- T-Shirt Hudson Skyhawks Orange (XXL)
+
+(8, 1, 0),  -- Sweat Hudson Bleu (S)
+(8, 2, 60), -- Sweat Hudson Bleu (M)
+(8, 3, 55), -- Sweat Hudson Bleu (L)
+(8, 4, 40), -- Sweat Hudson Bleu (XL)
+(8, 5, 30), -- Sweat Hudson Bleu (XXL)
+
+(9, 1, 0),  -- Sweat Hudson Noir (S)
+(9, 2, 70), -- Sweat Hudson Noir (M)
+(9, 3, 60), -- Sweat Hudson Noir (L)
+(9, 4, 50), -- Sweat Hudson Noir (XL)
+(9, 5, 35); -- Sweat Hudson Noir (XXL)
 
 -- --------------------------------------------------------
 
@@ -240,10 +263,10 @@ INSERT INTO `tailles` (`id`, `taille`) VALUES
 
 CREATE TABLE `utilisateurs` (
   `id` int(11) NOT NULL,
-  `compte_admin` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `identifiant` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `motdepasse` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+  `compte_admin` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `identifiant` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `motdepasse` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Déchargement des données de la table `utilisateurs`
@@ -251,6 +274,102 @@ CREATE TABLE `utilisateurs` (
 
 INSERT INTO `utilisateurs` (`id`, `compte_admin`, `identifiant`, `motdepasse`) VALUES
 (1, 'Y', 'admin1', '$2y$10$hsiMxdXvp/IriNBB29U/nOaG3S4TZ6Nc/3B.LrIpKAMMWEkJyjM5m');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `panier`
+-- 
+
+CREATE TABLE `panier` (
+    `id` int(11) NOT NULL,
+    `utilisateur_id` int(11) NOT NULL,
+    `produit_id` int(11) NOT NULL,
+    `taille` VARCHAR(50), -- Taille choisie
+    `quantite` int(11) NOT NULL DEFAULT 0,
+    `date_ajout` TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- Date d'ajout du produit au panier
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+--
+-- Déchargement des données de la table `panier`
+--
+
+
+
+
+
+
+-- --------------------------------------------------------
+
+-- Structure de la table `cursus`
+CREATE TABLE `cursus` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `titre` VARCHAR(255) NOT NULL, -- Nom ou titre du programme
+  `presentation` TEXT NOT NULL, -- Présentation générale
+  `objectif` TEXT NOT NULL, -- Objectif général
+  `matieres_principales` TEXT NOT NULL, -- Liste des matières principales
+  `options_possibles` TEXT NOT NULL, -- Liste des options possibles
+  `debouches` TEXT NOT NULL, -- Débouchés professionnels
+  `admission_conditions` TEXT NOT NULL, -- Conditions d'admission
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+-- Déchargement des données de la table `cursus`
+-- --------------------------------------------------------
+
+INSERT INTO `cursus` 
+(`titre`, `presentation`, `objectif`, `matieres_principales`, `options_possibles`, `debouches`, `admission_conditions`) 
+VALUES 
+('Programmes - Sciences',
+    'Le programme de Sciences de notre Université est conçu pour offrir une formation approfondie en sciences fondamentales. Grâce à un équilibre entre théorie et pratique, il permet aux étudiants de développer des compétences analytiques, expérimentales et technologiques avancées.',
+    'Former des scientifiques compétents capables d’analyser, de comprendre et d’innover dans les domaines des sciences fondamentales et appliquées. Ce programme met un accent sur l’interdisciplinarité et l’adaptabilité aux défis scientifiques et sociétaux contemporains.',
+    'Mathématiques avancées et modélisation, Physique appliquée et quantique, Chimie organique, inorganique et analytique, Biologie moléculaire et biotechnologies, Sciences de la Terre et de l’environnement',
+    'Intelligence artificielle et calcul scientifique, Neurosciences et biophysique, Énergies renouvelables et développement durable, Nanotechnologies et matériaux avancés',
+    'Recherche académique et industrielle, Enseignement et formation scientifique, Industrie pharmaceutique et biotechnologique, Ingénierie et innovation technologique, Écologie et développement durable. Les opportunités incluent également la poursuite d’études en Master et Doctorat dans des institutions prestigieuses à l’international.',
+    'Diplôme de fin d’études secondaires avec mention scientifique, Examen d’entrée basé sur les connaissances en mathématiques et sciences, Lettre de motivation détaillant les objectifs académiques et professionnels, Entretien avec un jury académique. Les candidatures sont ouvertes chaque année du 1er avril au 30 juin. Les résultats sont communiqués en août.'
+),
+('Programmes - Médecine',
+    'Le programme de Médecine propose une formation exhaustive qui combine l’étude approfondie des sciences médicales et la pratique clinique. Ce programme vise à préparer les étudiants à relever les défis de la santé publique tout en développant leur expertise médicale.',
+    'Former des professionnels de la santé compétents, capables de diagnostiquer et traiter des maladies, tout en contribuant à l’amélioration des systèmes de santé et à la recherche biomédicale.',
+    'Anatomie humaine, Physiologie, Biochimie clinique, Pathologie générale et spécialisée, Pharmacologie, Médecine générale et spécialisée',
+    'Recherche médicale et innovation, Médecine d’urgence et soins intensifs, Santé publique et épidémiologie, Chirurgie avancée',
+    'Pratique médicale dans des hôpitaux et cliniques, Recherche biomédicale, Santé publique et organisation de systèmes de santé, Poursuite des études spécialisées en médecine (cardiologie, neurologie, etc.).',
+    'Diplôme de fin des études secondaires avec mention scientifique, Examen d’entrée en Médecine (concours), Lettre de motivation soulignant les ambitions médicales, Entretien avec un jury médical. Les candidatures sont ouvertes du 1er mai au 30 juin.'
+),
+('Programmes - Business',
+    'Le programme de Business de Hudson Bay forme des leaders des affaires à travers une approche interdisciplinaire. Il combine les compétences analytiques, stratégiques et managériales nécessaires pour réussir dans un environnement commercial mondial en constante évolution.',
+    'Former des gestionnaires et entrepreneurs capables de diriger des organisations, élaborer des stratégies commerciales innovantes et contribuer au développement économique durable.',
+    'Économie et finance, Comptabilité, Marketing et stratégie, Gestion des ressources humaines, Entrepreneuriat et innovation',
+    'Commerce international, Gestion de projets, Analyse des données commerciales, Développement durable et responsabilité sociétale',
+    'Carrière dans la gestion des entreprises, Conseil et audit, Lancement de start-ups et projets entrepreneuriaux, Poursuite des études en MBA ou autres Masters spécialisés.',
+    'Diplôme de fin des études secondaires avec mention économique ou générale, Dossier académique solide, Examen d’entrée basé sur des connaissances en gestion et économie, Entretien de motivation. Candidatures ouvertes du 15 avril au 31 juillet.'
+),
+('Programmes - Art',
+    'Le programme d’Art de Hudson Bay encourage la créativité et l’expression artistique à travers une formation pluridisciplinaire en arts plastiques, design et histoire de l’art. Ce cursus favorise un épanouissement personnel et professionnel dans les domaines créatifs.',
+    'Former des artistes et designers polyvalents, capables de produire des œuvres originales et de contribuer au développement culturel et artistique mondial.',
+    'Peinture, Sculpture, Histoire de l’art, Design graphique, Photographie, Art numérique',
+    'Illustration et animation, Arts de la scène, Architecture et design d’intérieur, Conservation et restauration d’œuvres',
+    'Carrière d’artiste indépendant, Métiers du design et de la communication visuelle, Animation et médias numériques, Postes dans des musées et galeries d’art.',
+    'Diplôme de fin des études secondaires, Portfolio artistique, Entretien de présentation des travaux, Lettre de motivation expliquant les aspirations artistiques. Candidatures ouvertes du 1er mars au 30 juin.'
+),
+('Programmes - Lettres',
+    'Le programme de Lettres de Hudson Bay offre une formation rigoureuse en littérature, langues et philosophie. Il vise à développer des compétences en analyse, communication et pensée critique, indispensables dans une société en quête de réflexion et de créativité.',
+    'Former des spécialistes des lettres capables d’analyser des textes complexes, de transmettre des savoirs littéraires et culturels, et de contribuer à la vie intellectuelle.',
+    'Littérature française et comparée, Langues modernes et anciennes, Philosophie, Linguistique, Écriture créative',
+    'Traduction et interprétation, Journalisme et médias, Études culturelles et genre, Enseignement et recherche',
+    'Carrière dans l’enseignement et la recherche académique, Métiers de la communication et du journalisme, Édition et traduction, Poursuite d’études en littérature, linguistique ou philosophie.',
+    'Diplôme de fin d’études secondaires avec mention littéraire, Dossier académique solide, Épreuve écrite sur un sujet littéraire, Entretien de motivation. Candidatures ouvertes du 1er avril au 31 juillet.'
+),
+('Programmes - Ingénierie',
+    'Le programme d’Ingénierie de l’Université Hudson Bay forme des ingénieurs qualifiés dans des disciplines variées, capables de relever les défis technologiques et sociétaux du XXIe siècle. Ce cursus allie théorie avancée et expériences pratiques pour offrir une formation complète.',
+    'Former des ingénieurs compétents, capables d’innover, de concevoir et de gérer des projets complexes dans des environnements techniques variés.',
+    'Mathématiques appliquées, Physique avancée, Informatique et programmation, Électronique et automatisation, Mécanique des structures',
+    'Énergies renouvelables, Robotique et intelligence artificielle, Génie civil et construction, Systèmes de transport et mobilité durable',
+    'Carrière d’ingénieur dans les secteurs de l’énergie, de l’automobile, et des télécommunications, Recherche et développement technologique, Poursuite d’études en génie ou management industriel.',
+    'Diplôme de fin d’études secondaires avec mention scientifique, Concours d’entrée basé sur les mathématiques et la physique, Lettre de motivation expliquant les projets professionnels. Candidatures ouvertes du 1er mai au 31 juillet.'
+);
 
 --
 -- Index pour les tables déchargées
@@ -300,6 +419,12 @@ ALTER TABLE `administration`
 ALTER TABLE `articles`
   ADD PRIMARY KEY (`id`);
 
+--
+-- Index pour la table `panier`
+--
+ALTER TABLE `panier`
+  ADD PRIMARY KEY (`id`);
+
 
 --
 -- AUTO_INCREMENT pour les tables déchargées
@@ -342,6 +467,11 @@ ALTER TABLE `articles`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
+-- AUTO_INCREMENT pour la table `utilisateurs`
+--
+ALTER TABLE `panier`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
+--
 -- Contraintes pour les tables déchargées
 --
 
@@ -358,6 +488,13 @@ ALTER TABLE `produits_tailles`
 ALTER TABLE `profil`
   ADD CONSTRAINT `fk_utilisateur` FOREIGN KEY (`utilisateur_id`) REFERENCES `utilisateurs` (`id`) ON DELETE CASCADE;
 COMMIT;
+
+--
+-- Contraintes pour la table `panier`
+--
+ALTER TABLE `panier`
+  ADD CONSTRAINT `produits_tailles_panier_1` FOREIGN KEY (`produit_id`) REFERENCES `produits` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `f_utilisateur` FOREIGN KEY (`utilisateur_id`) REFERENCES `utilisateurs` (`id`) ON DELETE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

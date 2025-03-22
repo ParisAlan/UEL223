@@ -309,3 +309,128 @@ Produit
     text-align: left;
     padding-bottom: 0.5em;
 }
+
+/**********************************************************
+PANIER 
+***********************************************************/
+
+.panier {
+    background: #080725;
+    color: white;
+    padding: 30px;
+}
+
+.panier h3 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--secondary-color);
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.panier-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.produit-panier {
+    display: flex;
+    align-items: center;
+    background: var(--white-color);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 700px;
+    border: 1px solid #e0e0e0;
+    color: black;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.produit-panier:hover {
+    border-color: #333;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.panier-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.produit-panier:hover .panier-pic {
+    transform: scale(1.05);
+}
+
+.details-produit {
+    flex-grow: 1;
+    padding: 0 15px;
+}
+
+.nom-produit {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.prix-produit,
+.taille-produit {
+    font-size: 14px;
+    color: #555;
+}
+
+.form-supprimer {
+    display: flex;
+    align-items: center;
+}
+
+.btn-supprimer {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #dc3545;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-supprimer:hover {
+    color: #b02a37;
+    transform: scale(1.1);
+}
+
+.total-panier {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.panier-vide {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.success-message {
+    color: #50bc50;
+    font-weight: bold;
+    background-color: var(--tertiary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    background-color: var(--tertiary-color);
+    text-align: center;
+    padding: 1rem;
+}

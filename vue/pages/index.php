@@ -1,31 +1,35 @@
 <?php
-	require_once 'structure/inc.head.php';
+require_once 'structure/inc.head.php';
 ?>
 
 <?php
-	require_once 'index/inc.introduction.php';
+require_once 'structure/inc.transition.php';
 ?>
 
 <?php
-	require_once 'index/inc.slogan.php';
+require_once 'index/inc.introduction.php';
 ?>
 
 <?php
-	require_once 'index/inc.news.php';
+require_once 'index/inc.slogan.php';
 ?>
 
 <?php
-	require_once 'index/inc.enseignement.php';
+require_once 'index/inc.news.php';
 ?>
 
 <?php
-	require_once 'structure/inc.interlude.php';
+require_once 'index/inc.enseignement.php';
 ?>
 
 <?php
-	require_once 'index/inc.doyen.php';
+require_once 'structure/inc.interlude.php';
 ?>
 
 <?php
-	require_once 'structure/inc.footer.php';
+require_once 'index/inc.doyen.php';
+?>
+
+<?php
+require_once 'structure/inc.footer.php';
 ?>

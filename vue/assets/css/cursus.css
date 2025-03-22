@@ -1,0 +1,129 @@
+.cursus {
+    background-color: var(--tertiary-color);
+    text-align: center;
+}
+
+.cursus li {
+    color: var(--white-color);
+}
+
+.cursus-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 3rem;
+}
+
+.titre_h1 {
+    background: linear-gradient(90deg, #ffda44, #ffc30f);
+    color: #0c153c;
+    padding: 20px;
+    font-family: "Fraunces", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.sections {
+    margin: 1rem;
+    max-width: 800px;
+    opacity: 0;
+    border: 2px solid #ffc30f;
+    border-radius: 3rem;
+    padding: 1rem;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.sections>p {
+    font-family: "Comfortaa", serif;
+
+}
+
+.titre_h2 {
+    font-family: 'Fraunces';
+    color: #ffda44;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #ffc30f;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.liste_cursus {
+    list-style-type: none;
+    padding: 0;
+    font-family: "Comfortaa", serif;
+}
+
+.sections>li {
+    background: rgba(255, 195, 15, 0.1);
+    color: #ffc30f;
+    font-family: "Noto", serif;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, background 0.3s ease;
+    animation: bounceIn 1s ease-in-out;
+}
+
+.sections>li:hover {
+    transform: rotateY(10deg) scale(1.1);
+    background: rgba(255, 195, 15, 0.3);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

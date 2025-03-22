@@ -6,6 +6,10 @@ require_once 'structure/inc.head.php';
 require_once 'structure/inc.header.php';
 ?>
 
+<?php
+require_once 'structure/inc.transition.php';
+?>
+
 <section class="section-descriptions">
     <h1> Vivre pleinement son expérience universitaire </h1>
     <p> Située en plein cœur de New York, l’Université Hudson Bay offre un cadre de vie dynamique et enrichissant. Entre infrastructures modernes, activités culturelles et espaces de détente, le campus est conçu pour favoriser l’épanouissement des étudiants.

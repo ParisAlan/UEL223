@@ -79,21 +79,25 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                 // Récupère la taille sélectionnée
                 $taille_selectionnee = $_POST['taille'];
 
-                // Ajoute le produit au panier dans la session
-                if (!isset($_SESSION['panier'])) {
-                    $_SESSION['panier'] = [];  // Crée un panier vide si ce n'est pas déjà fait
+                // Récupère l'ID de l'utilisateur
+                $utilisateur_id = $_SESSION['valeur_id'];  // Assurez-vous d'avoir l'ID de l'utilisateur connecté
+
+                // Vérifier si le produit est déjà dans le panier
+                $stmt_check = $bdd->prepare("SELECT id, quantite FROM panier WHERE utilisateur_id = ? AND produit_id = ? AND taille = ?");
+                $stmt_check->execute([$utilisateur_id, $product['id'], $taille_selectionnee]);
+                $existing_item = $stmt_check->fetch(PDO::FETCH_ASSOC);
+
+                if ($existing_item) {
+                    // Si le produit existe déjà dans le panier, on met à jour la quantité
+                    $new_quantity = $existing_item['quantite'] + 1;  // Incrémentation de la quantité
+                    $stmt_update = $bdd->prepare("UPDATE panier SET quantite = ? WHERE id = ?");
+                    $stmt_update->execute([$new_quantity, $existing_item['id']]);
+                } else {
+                    // Sinon, on ajoute le produit au panier
+                    $stmt_add = $bdd->prepare("INSERT INTO panier (utilisateur_id, produit_id, taille, quantite) VALUES (?, ?, ?, ?)");
+                    $stmt_add->execute([$utilisateur_id, $product['id'], $taille_selectionnee, 1]);  // Quantité initiale = 1
                 }
 
-                // Ajouter le produit à la session (panier)
-                $produit_panier = [
-                    'id' => $product['id'],
-                    'nom' => $product['nom'],
-                    'prix' => $product['prix'],
-                    'taille' => $taille_selectionnee,
-                    'image' => $product['image']  // Ajoute l'image du produit
-                ];
-
-                $_SESSION['panier'][] = $produit_panier; // Ajoute le produit au panier
                 echo "<p>Produit ajouté au panier.</p>";
             } else {
                 // Afficher un message si aucune taille n'a été sélectionnée
@@ -105,9 +109,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
         echo "</div>"; // Fin de product-container
     } else {
         echo "Produit introuvable.";
-    }    
+    }
 } else {
     echo "ID non valide.";
 }
-?>
-

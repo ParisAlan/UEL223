@@ -17,7 +17,7 @@
                 <p class="phrases_gras"><br>Rejoignez une communauté de chercheurs et d’innovateurs passionnés!</p>
 
                 <div class="conteneur_btn">
-                    <a class="ensavoirplus" href="#" title="redirection">En savoir + </a>
+                    <a class="ensavoirplus" href="cursus.php?id=1" title="redirection">En savoir + </a>
                 </div>
             </div>
 
@@ -32,7 +32,7 @@
                 <p class="phrases_gras"><br>Venez affiner votre esprit critique et façonner votre propre voix!</p>
 
                 <div class="conteneur_btn">
-                    <a class="ensavoirplus" href="#" title="redirection">En savoir + </a>
+                    <a class="ensavoirplus" href="cursus.php?id=5" title="redirection">En savoir + </a>
                 </div>
             </div>
 
@@ -47,7 +47,7 @@
                 <p class="phrases_gras"><br>Évoluez dans un environnement stimulant où votre talent prendra toute sa dimension!</p>
 
                 <div class="conteneur_btn">
-                    <a class="ensavoirplus" href="#" title="redirection">En savoir + </a>
+                    <a class="ensavoirplus" href="cursus.php?id=4" title="redirection">En savoir + </a>
                 </div>
             </div>
 
@@ -63,7 +63,7 @@
 
 
                 <div class="conteneur_btn">
-                    <a class="ensavoirplus" href="#" title="redirection">En savoir + </a>
+                    <a class="ensavoirplus" href="cursus.php?id=6" title="redirection">En savoir + </a>
                 </div>
             </div>
 
@@ -78,7 +78,7 @@
                 <p class="phrases_gras"><br>Rejoignez une faculté engagée pour l’innovation médicale et le bien-être humain.</p>
 
                 <div class="conteneur_btn">
-                    <a class="ensavoirplus" href="#" title="redirection">En savoir + </a>
+                    <a class="ensavoirplus" href="cursus.php?id=2" title="redirection">En savoir + </a>
                 </div>
             </div>
 
@@ -94,7 +94,7 @@
 
 
                 <div class="conteneur_btn">
-                    <a class="ensavoirplus" href="#" title="redirection">En savoir + </a>
+                    <a class="ensavoirplus" href="cursus.php?id=3" title="redirection">En savoir + </a>
                 </div>
             </div>
         </div>

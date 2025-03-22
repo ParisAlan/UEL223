@@ -42,10 +42,11 @@ Carousel
 .carousel-up {
   text-align: center;
   padding: 3rem 0rem;
+  background-color: var(--tertiary-color);
 }
 
 .carousel-up h2 {
-  color: var(--primary-color);
+  color: var(--white-color);
   font-family: "Fraunces", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -58,12 +59,13 @@ Bibliothèque
 *****************************************************/
 
 .bibliothèque {
-  padding: 3rem;
+  padding: 5rem;
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: var(--primary-color);
 }
 
 .biblio-left {
@@ -77,12 +79,12 @@ Bibliothèque
 .biblio-pics img {
   width: 100%;
   -webkit-box-shadow: -50px -40px 0px -10px #000000;
-  box-shadow: -50px -40px 0px -10px var(--primary-color);
+  box-shadow: -50px -40px 0px -10px var(--yellow-color);
 }
 
 .left-title {
   text-align: left !important;
-  color: var(--primary-color);
+  color: var(--yellow-color);
   font-family: "Fraunces", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -92,7 +94,7 @@ Bibliothèque
 }
 
 .biblio-text p {
-  color: black;
+  color: white;
   margin: 2rem;
   text-align: left !important;
 
@@ -112,6 +114,7 @@ Presentation
   justify-content: center;
   align-content: center;
   align-items: center;
+  background-color: var(--tertiary-color);
 }
 
 .presentation-container {

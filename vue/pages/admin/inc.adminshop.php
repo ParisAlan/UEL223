@@ -101,7 +101,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <div class="products-container">
         <?php foreach ($produits as $id => $details) { ?>
-            <div class="card">
+            <div class="cardz">
                 <img src="vue/assets/shop/<?= $details[0]['image']; ?>" class="card-image" alt="<?= htmlspecialchars($details[0]['nom']); ?>">
                 <div class="card-content">
                     <h3 class="card-title"><?= htmlspecialchars($details[0]['nom']); ?></h3>
