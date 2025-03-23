@@ -3,19 +3,17 @@ $query = $bdd->query("SELECT * FROM `articles` WHERE `mise_en_avant` = 1");
 $news = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
-
-
 <section class="news">
     <div class="row-column">
         <div class="news-title">
-            <h2> Vie Universitaire</h2>
+            <h2>Vie Universitaire</h2>
         </div>
         <h3>Restez informé(e) des activités sur le campus</h3>
 
         <div class="container news-container">
             <?php foreach ($news as $new): ?>
                 <div class="carddeck">
-                    <a href="#">
+                    <a href="article.php?nom=<?= urlencode($new['titre']) ?>">
                         <div class="slide slide1">
                             <div class="content">
                                 <div class="icon">

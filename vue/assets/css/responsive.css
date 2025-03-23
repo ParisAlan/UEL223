@@ -1,0 +1,615 @@
+/*******************************************
+    TELEPHONE - RESPONSIVE    
+*********************************************/
+
+@media screen and (min-width: 320px) and (max-width: 699px) {
+
+
+    /*******************************************
+    STRUCTURE - RESPONSIVE
+    *********************************************/
+    .footer-section {
+        width: 30%;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+
+    /*******************************************
+    PAGE INDEX - RESPONSIVE
+    *********************************************/
+    .row-header {
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 75rem;
+        margin-left: auto;
+        margin-right: auto;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .slogan {
+        display: none;
+    }
+
+    .news {
+        background-color: var(--tertiary-color);
+        text-align: center;
+        padding: 2rem 0rem;
+    }
+
+    .news-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem 0rem;
+        flex-wrap: wrap;
+    }
+
+    .enseignement {
+        background-color: var(--primary-color);
+        text-align: center;
+        display: flex;
+        padding: 3rem 1rem 3rem 1rem;
+    }
+
+    .enseignement h2 {
+        font-family: 'Fraunces', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        color: var(--white-color);
+        margin: 27px 0px 35px 0px;
+    }
+
+    .hawks {
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        background-size: 600px;
+    }
+
+    .hawks-pic {
+        width: 90%;
+    }
+
+    .doyen {
+        background-color: var(--tertiary-color);
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .doyen-signature {
+        font-family: 'Mrs Saint Delafield', sans-serif;
+        color: var(--yellow-color);
+        font-size: 44px;
+        top: -15px;
+        position: relative;
+    }
+
+
+    /*******************************************
+    PAGE BOUTIQUE - RESPONSIVE
+    *********************************************/
+
+    .highlight-title h2 {
+        margin: 0.5rem;
+    }
+
+    .highlight-shop {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary-color);
+        padding: 2.5rem;
+    }
+
+    .highlight-card {
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .newsletter {
+        background-position: 600px;
+        padding: 2rem;
+    }
+
+    /*******************************************
+    PAGE PANIER - RESPONSIVE
+    *********************************************/
+
+    .produit-panier {
+        padding: 1rem 5px;
+    }
+
+    /*******************************************
+    PAGE PRODUCTS - RESPONSIVE
+    *********************************************/
+
+
+
+
+    /*******************************************
+    PAGE PRODUITS - RESPONSIVE
+    *********************************************/
+
+    .product-container {
+        display: flex;
+        background-color: var(--tertiary-color);
+        flex-wrap: wrap;
+    }
+
+    .product-img {
+        width: 100%;
+    }
+
+    .product-img img {
+        width: 100%;
+    }
+
+    .product-text {
+        padding: 1.5rem;
+    }
+
+    #taille-select {
+        width: 100%;
+    }
+
+    .button-shop {
+        width: 100%;
+    }
+
+    /*******************************************
+    PAGE UNIVERSITE - RESPONSIVE
+    *********************************************/
+
+    #story_univ p {
+        padding: 0rem 1rem;
+    }
+
+    #text_story {
+        background-color: #0c153c;
+        padding: 2rem 1rem;
+        margin: 0rem;
+        border-radius: 3rem;
+    }
+
+    #rubrique_stat {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        background-color: #ffc30f;
+        padding: 1rem 2rem;
+        flex-direction: column;
+    }
+
+    #organigramme {
+        background-color: var(--primary-color);
+        padding: 0rem;
+    }
+
+    .section-middle h2 {
+        padding: 2rem 0rem;
+        margin: 0rem 1rem;
+    }
+
+    .equipe_aca {
+        padding: 0 10px;
+        margin: 0 auto;
+        font-family: "Fraunces", sans-serif;
+        display: flex;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 11px;
+        justify-items: center;
+        flex-direction: column;
+    }
+
+    .rectangle {
+        padding: 1rem 2rem;
+    }
+
+    .level-1 {
+        width: 100%
+    }
+
+    #skyhawks {
+        padding: 1rem;
+        background-size: 400px;
+    }
+
+    #section_emplois {
+        padding: 1rem;
+    }
+
+    /*******************************************
+    PAGE CONNEXION - RESPONSIVE 
+    *********************************************/
+
+    .connexion {
+        background-color: var(--secondary-color);
+        padding: 1.5rem 1rem;
+    }
+
+    .connexion-formulaire {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formulaire-gauche img {
+        width: 100%;
+        border-radius: 2rem 2rem 2rem 2rem;
+        height: auto;
+    }
+
+    .formulaire-gauche {
+        flex: none;
+    }
+
+    .formulaire-droite {
+        padding: 0.7rem;
+        flex: none;
+    }
+
+    #btn-1 {
+        width: 65%;
+    }
+
+    /*******************************************
+    PAGE PROGRAMMES_AC - RESPONSIVE 
+    *********************************************/
+
+    #h1 {
+        font-size: 3.5rem;
+
+    }
+
+    #section_prog {
+        display: flex;
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .prog {
+        width: 100%;
+
+    }
+
+    #admission_licence {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #admissions_master {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .text_cursus {
+        flex-basis: 80%;
+        padding-right: 0rem;
+        margin-right: 0rem;
+        text-align: justify;
+    }
+
+    #candidatures {
+        padding: 1em;
+    }
+
+    .cursus_contact>ul {
+        margin-left: 15px;
+    }
+
+    .cursus_contact {
+        padding: 1rem;
+    }
+
+
+    #formation_alt_cont {
+        padding: 1em;
+    }
+
+    .formation_container {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .formation_cont,
+    .formation_alt {
+        width: 95%;
+    }
+
+    #erasmus {
+        background-color: var(--tertiary-color);
+        padding: 2rem;
+    }
+
+
+    /*******************************************
+    PAGE CAMPUS - RESPONSIVE 
+    *********************************************/
+
+    .section-descriptions {
+
+        padding: 2rem;
+    }
+
+    .section-descriptions h1 {
+        font-size: 3rem;
+    }
+
+    .bibliothèque {
+        padding: 2rem;
+
+    }
+
+    .skyhawks-section {
+        padding: 1rem;
+    }
+
+    .skyhawks-header h2 {
+        margin: 0rem;
+    }
+
+    .presentation {
+        padding: 1rem;
+        ;
+    }
+
+    .presentation-left {
+        flex: 100%;
+        padding: 0rem;
+    }
+
+    .presentation-right {
+        flex: 100%;
+        padding: 0rem;
+    }
+
+    .presentation-pics-right {
+        margin: 0rem 0rem 1rem 0rem;
+    }
+
+    .presentation-text,
+    .presentation-text-right {
+        padding: 0rem;
+    }
+
+    .left-title {
+        font-size: 1.6rem;
+        margin: 0.5rem;
+    }
+
+    .biblio-text p {
+        margin: 0.5rem;
+    }
+
+    /*******************************************
+    PAGE ACTUALITES - RESPONSIVE 
+    *********************************************/
+
+    #header {
+        color: rgba(255, 255, 255, 0.5);
+        height: 0%;
+        left: 0;
+        padding: 1em 1em;
+        top: 0;
+        width: 100%;
+        position: relative;
+    }
+
+    .inner {
+
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+    #header .image.avatar {
+        margin: 0 0 1em 0;
+        width: 8em;
+    }
+
+    #main {
+        margin-left: 0%;
+        max-width: auto;
+        padding: 2em 2em 2em 2em;
+        width: 100%;
+    }
+
+    .row-actualites>.col-6 {
+        width: 100%;
+    }
+
+
+    /*******************************************
+    PAGE CURSUS - RESPONSIVE 
+    *********************************************/
+
+    .cursus-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding: 1rem;
+    }
+
+    .titre_h2 {
+        margin: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    /*******************************************
+    PAGE ARTICLES - RESPONSIVE 
+    *********************************************/
+    .article-container {
+        padding: 1rem;
+    }
+}
+
+/*******************************************
+    TABLETTE - RESPONSIVE    
+*********************************************/
+
+@media screen and (min-width: 701px) and (max-width: 1200px) {
+
+    /*******************************************
+    PAGE INDEX - RESPONSIVE - TABLETTE
+    *********************************************/
+
+    .row-header {
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 75rem;
+        margin-left: auto;
+        margin-right: auto;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .news-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 0rem 0rem 0rem 0rem;
+        flex-wrap: wrap;
+    }
+
+    /*******************************************
+    PAGE BOUTIQUE - RESPONSIVE - TABLETTE 
+    *********************************************/
+
+    /*******************************************
+    PAGE PANIER - RESPONSIVE - TABLETTE
+    *********************************************/
+
+    /*******************************************
+    PAGE PRODUCTS - RESPONSIVE - TABLETTE
+    *********************************************/
+
+    /*******************************************
+    PAGE PRODUITS - RESPONSIVE
+    *********************************************/
+
+    .product-container {
+        display: flex;
+        background-color: var(--tertiary-color);
+    }
+
+    .product-img {
+        width: 100%;
+    }
+
+    .product-img img {
+        width: 100%;
+    }
+
+    .product-text {
+        padding: 1.5rem;
+    }
+
+    #taille-select {
+        width: 100%;
+    }
+
+    .button-shop {
+        width: 100%;
+    }
+
+    /*******************************************
+    PAGE UNIVERSITE - RESPONSIVE - TABLETTE
+    *********************************************/
+    #story_univ p {
+        padding: 0rem 1rem;
+    }
+
+    #text_story {
+        background-color: #0c153c;
+        padding: 2rem 1rem;
+        margin: 0rem;
+        border-radius: 3rem;
+    }
+
+    #organigramme {
+        background-color: var(--primary-color);
+        padding: 0rem;
+    }
+
+    .section-middle h2 {
+        padding: 2rem 0rem;
+        margin: 0rem 1rem;
+    }
+
+    .rectangle {
+        padding: 1rem 2rem;
+    }
+
+    .level-1 {
+        width: 100%
+    }
+
+    #skyhawks {
+        padding: 1rem;
+        background-size: 400px;
+    }
+
+    #section_emplois {
+        padding: 1rem;
+    }
+
+    /*******************************************
+    PAGE CAMPUS - RESPONSIVE 
+    *********************************************/
+    .section-descriptions h1 {
+        font-size: 4.5rem;
+    }
+
+    .section-descriptions {
+        padding: 3rem;
+    }
+}
+
+/*******************************************
+    PAGE CONNEXION - RESPONSIVE - TABLETTE
+*********************************************/
+
+@media screen and (min-width: 701px) and (max-width: 1001px) {
+
+    /*******************************************
+    PAGE CONNEXION - RESPONSIVE - TABLETTE
+    *********************************************/
+    .connexion {
+        background-color: var(--secondary-color);
+        padding: 7rem 2rem;
+    }
+
+    #btn-1 {
+        width: 85%;
+    }
+}

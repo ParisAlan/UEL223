@@ -1,0 +1,107 @@
+/*********************************************************************************************************
+PROFIL
+******************************************************************************************************/
+
+.profil {
+    padding-bottom: 2rem;
+}
+
+.profil-title {
+    padding: 2rem 2rem 1.5rem 2rem;
+    display: flex;
+    width: 90%;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.284);
+    align-items: center;
+}
+
+.anonyme {
+    width: 10%;
+    border-radius: 5rem;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+}
+
+#title {
+    margin-left: 1rem;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.profil-profil {
+    width: 90%;
+    display: flex;
+}
+
+.profil-profil h3 {
+    font-size: x-large;
+    margin-bottom: 1rem;
+}
+
+.profil-profil h4 {
+    font-size: larger;
+    margin-bottom: 0.5rem;
+}
+
+.profil-profil h3,
+.profil-profil p,
+.profil-profil h4 {
+    font-family: "Comfortaa", sans-serif;
+}
+
+.profil-left {
+    flex: 50% 0 0;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+.profil-right {
+    flex: 50% 0 0;
+    padding: 1rem;
+    border-left: 2px solid rgba(128, 128, 128, 0.284);
+    margin-top: 0.5rem;
+}
+
+.profil-right h3,
+.profil-left h3 {
+    color: var(--primary-color);
+}
+
+#prenom,
+#nom,
+#telephone,
+#date_naissance,
+#coach,
+#j_train {
+    margin-bottom: 1rem;
+}
+
+.btn-modif {
+    padding-left: 5rem;
+    padding: 1rem;
+    border-radius: 4rem;
+    background-color: var(--white-color);
+    border: 3px solid var(--primary-color);
+    color: var(--primary-color);
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    height: 100%;
+}
+
+.btn-modif:hover {
+    background-color: var(--primary-color);
+    border: 3px solid var(--white-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.title-title {
+    padding: 2rem 2rem 0.5rem 2rem;
+}
+
+.btn-btn {
+    margin-left: 28rem;
+}

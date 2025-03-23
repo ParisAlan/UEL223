@@ -16,6 +16,10 @@
     <link rel="stylesheet" type="text/css" href="vue/assets/css/acad.css">
     <link rel="stylesheet" type="text/css" href="vue/assets/css/universite.css">
     <link rel="stylesheet" type="text/css" href="vue/assets/css/cursus.css">
+    <link rel="stylesheet" type="text/css" href="vue/assets/css/profile.css">
+
+    <!-- AJOUT RESPONSIVE CSS -->
+    <link rel="stylesheet" type="text/css" href="vue/assets/css/responsive.css">
 
 
     <!-- OWL CARROUSEL-->

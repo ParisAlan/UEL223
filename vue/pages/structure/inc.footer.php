@@ -42,7 +42,8 @@
 
 
 
-</body>
-<script type="text/javascript" src="vue/assets/js/script.js"></script>
+    </body>
+    <script type="text/javascript" src="vue/assets/js/script.js"></script>
+    <script type="text/javascript" src="vue/assets/js/transition.js"></script>
 
-</html>
+    </html>

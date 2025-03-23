@@ -472,6 +472,11 @@ select#choix {
     background-color: var(--secondary-color);
 }
 
+.information-container strong {
+    color: var(--lightlightgray-color);
+}
+
+
 .forms-container {
     flex: 45% 0 0;
     margin-left: 2rem;
@@ -491,7 +496,7 @@ select#choix {
 
 .modal-content {
     background-color: white;
-    margin: 15% auto;
+    margin: 1% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 50%;

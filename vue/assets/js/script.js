@@ -69,7 +69,59 @@ $(document).ready(function () {
                 modal.hide();
             }
         });
+
+
+        const modal2 = $("#editModal2");
+
+        // Quand on clique sur ✏️, on ouvre la modale et on pré-remplit les champs
+        $(".edit-admin").on("click", function () {
+            const userId = $(this).data("id");
+            const userIdentifiant = $(this).data("identifiant");
+
+            $("#edit_id").val(userId);
+            $("#edit_identifiant").val(userIdentifiant);
+
+            modal2.show();
+        });
+
+        // Quand on clique sur la croix, on ferme la modale
+        closeBtn.on("click", function () {
+            modal2.hide();
+        });
+
+        // Quand on clique en dehors de la modale, on la ferme
+        $(window).on("click", function (event) {
+            if ($(event.target).is(modal2)) {
+                modal2.hide();
+            }
+        });
+
+        const modal3 = $("#editArticleModal");
+
+        // Quand on clique sur ✏️, on ouvre la modale et on pré-remplit les champs
+        $(".edit-article").on("click", function () {
+            const userId = $(this).data("id");
+            const userIdentifiant = $(this).data("identifiant");
+
+            $("#edit_id").val(userId);
+            $("#edit_identifiant").val(userIdentifiant);
+
+            modal3.show();
+        });
+
+        // Quand on clique sur la croix, on ferme la modale
+        closeBtn.on("click", function () {
+            modal3.hide();
+        });
+
+        // Quand on clique en dehors de la modale, on la ferme
+        $(window).on("click", function (event) {
+            if ($(event.target).is(modal3)) {
+                modal3.hide();
+            }
+        });
     });
+
 
 
     //////////////////////////////////////// ADMIN SHOP  /////////////////////////////////////////////////////////////////

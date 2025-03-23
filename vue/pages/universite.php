@@ -3,6 +3,10 @@ require_once 'structure/inc.head.php';
 ?>
 
 <?php
+require_once 'structure/inc.transition.php';
+?>
+
+<?php
 require_once 'universite/inc.introduction.php';
 ?>
 

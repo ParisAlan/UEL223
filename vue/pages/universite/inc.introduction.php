@@ -45,6 +45,14 @@
 
                     // Le lien vers la boutique est toujours affiché.
                     echo "<li class='header-nav-item'><a href='boutique.php' class='header-navi-lien' title='Boutique'><i class='fa-solid fa-cart-shopping'></i></a></li>";
+
+                    // ON RAJOUTE UN PETIT EMOJI QUI VA CHANGER LA DA DU SITE
+                    echo "<li id='btn-da' class='header-nav-item'>
+                    <a href='#' id='btn-da' class='header-navi-lien' onclick='triggerEffect()'>
+                        <i class='fa-solid fa-football'></i>
+                    </a>
+                </li>
+                ";
                     ?>
 
                 </ul>

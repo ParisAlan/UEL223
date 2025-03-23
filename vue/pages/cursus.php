@@ -7,6 +7,10 @@ require_once 'structure/inc.header.php';
 ?>
 
 <?php
+require_once 'structure/inc.transition.php';
+?>
+
+<?php
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $id = intval($_GET['id']);
 

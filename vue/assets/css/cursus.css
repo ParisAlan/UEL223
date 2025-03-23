@@ -28,14 +28,19 @@
 }
 
 .sections {
-    margin: 1rem;
-    max-width: 800px;
-    opacity: 0;
+    margin-bottom: 2rem;
+    max-width: 850px;
     border: 2px solid #ffc30f;
     border-radius: 3rem;
     padding: 1rem;
     transform: translateY(50px);
     animation: fadeInUp 1s ease-in-out forwards;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .sections>p {
@@ -61,7 +66,7 @@
     font-family: "Comfortaa", serif;
 }
 
-.sections>li {
+.liste_cursus>li {
     background: rgba(255, 195, 15, 0.1);
     color: #ffc30f;
     font-family: "Noto", serif;
@@ -77,10 +82,11 @@
     animation: bounceIn 1s ease-in-out;
 }
 
-.sections>li:hover {
+.liste_cursus>li:hover {
     transform: rotateY(10deg) scale(1.1);
     background: rgba(255, 195, 15, 0.3);
 }
+
 
 @keyframes fadeInUp {
     from {

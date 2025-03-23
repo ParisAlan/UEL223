@@ -6,6 +6,10 @@ require_once 'structure/inc.head.php';
 require_once 'shop/inc.header.php';
 ?>
 
+<?php
+require_once 'structure/inc.transition.php';
+?>
+
 <section class="search-results">
     <div class="row-column">
         <div class="search-results-container">

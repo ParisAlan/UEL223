@@ -7,13 +7,9 @@ require_once 'structure/inc.header.php';
 ?>
 
 <?php
-require_once 'structure/inc.transition.php';
+require_once 'admin/inc.adminarticles.php';
 ?>
 
-
-<?php
-require_once 'profile/inc.profile.php';
-?>
 
 <?php
 require_once 'structure/inc.footer.php';
